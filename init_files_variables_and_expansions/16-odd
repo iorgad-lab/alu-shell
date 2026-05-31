@@ -1,0 +1,2 @@
+#!/bin/bash
+cat -n | tr -s " " | cut -d" " -f2 | awk "NR
