@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | tr -s " " | cut -d" " -f2 | awk "NR
+cat -n | while read n line; do [ $((n%2)) -eq 1 ] && echo "$line"; done
